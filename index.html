@@ -25,7 +25,7 @@
     
     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     oscillator = audioCtx.createOscillator();
-    oscillator.frequency.value = 3000; // value in hertz
+    //oscillator.frequency.value = 3000; // value in hertz
     var gainNode = audioCtx.createGain();
     oscillator.connect(gainNode);
     gainNode.connect(audioCtx.destination);
