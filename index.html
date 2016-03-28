@@ -28,6 +28,7 @@
     //oscillator.frequency.value = 3000; // value in hertz
     var gainNode = audioCtx.createGain();
     oscillator.connect(gainNode);
+    gainNode.gain.value = 24
     gainNode.connect(audioCtx.destination);
     oscillator.type = 'sine'; // sine wave — other values are 'square', 'sawtooth', 'triangle' and 'custom'
     oscillator.frequency.value = 1200; // value in hertz
